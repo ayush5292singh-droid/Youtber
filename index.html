@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <title>Creator Empire 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <header class="topbar">
+      <div class="brand">CREATOR<span> EMPIRE</span><small>3D LIFE SIMULATOR</small></div>
+      <div class="stats">
+        <div class="stat">💵 <span id="money">₹500</span></div>
+        <div class="stat">▶ <span id="subs">0</span></div>
+        <div class="stat">⭐ <span id="level">1</span></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="world">
+        <div id="scene"></div>
+        <div class="location">
+          <span class="live-dot"></span> YOUR STARTER STUDIO
+          <p id="sceneText">Your creator journey starts here.</p>
+        </div>
+        <div class="world-bottom">
+          <div class="mini-stat">📹 Videos <b id="videos">0</b></div>
+          <div class="mini-stat">👥 Team <b id="team">0</b></div>
+          <div class="mini-stat">⚡ Energy <b id="energy">100</b>%</div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="welcome">
+          <div class="avatar">🎬</div>
+          <div><small>WELCOME, CREATOR</small><h2 id="creatorName">Rookie Creator</h2>
+            <p id="rank">Beginner · Level 1</p></div>
+        </div>
+
+        <div class="progress-card">
+          <div class="flex"><b>Road to fame</b><span id="progressLabel">0 / 100</span></div>
+          <div class="progress"><div id="progressBar"></div></div>
+          <small>Reach your next subscriber milestone.</small>
+        </div>
+
+        <h3>YOUR CAREER</h3>
+        <div class="actions">
+          <button class="action primary" id="record">
+            <span>🎥</span><div><b>Record a video</b><small>Create your next upload</small></div><i>→</i>
+          </button>
+          <button class="action" id="upload">
+            <span>🚀</span><div><b>Upload video</b><small>Publish and gain subscribers</small></div><i>→</i>
+          </button>
+          <button class="action" id="hire">
+            <span>🧑‍💻</span><div><b>Hire an editor</b><small id="hireCost">Cost: ₹300</small></div><i>→</i>
+          </button>
+          <button class="action" id="upgrade">
+            <span>🖥️</span><div><b>Upgrade your studio</b><small id="upgradeCost">Cost: ₹700</small></div><i>→</i>
+          </button>
+          <button class="action" id="event">
+            <span>🎤</span><div><b>Attend creator event</b><small>Network and find opportunities</small></div><i>→</i>
+          </button>
+          <button class="action" id="sponsor">
+            <span>🤝</span><div><b>Brand sponsorships</b><small>Build your reputation first</small></div><i>→</i>
+          </button>
+        </div>
+
+        <div class="bottom-card">
+          <div><span>📈</span><div><b>Channel analytics</b><small id="analytics">Your channel is just getting started.</small></div></div>
+          <button id="save">Save game</button>
+        </div>
+        <p class="note">Your progress is saved on this device.</p>
+      </aside>
+    </main>
+
+    <footer>
+      <span>CREATOR EMPIRE 3D</span>
+      <span id="status">Ready to create your future.</span>
+    </footer>
+    <div id="toast" role="status"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
